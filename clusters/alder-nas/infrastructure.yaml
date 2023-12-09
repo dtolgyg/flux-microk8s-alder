@@ -30,7 +30,7 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./infrastructure/controllers
-  prune: false
+  prune: true
   wait: true
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
