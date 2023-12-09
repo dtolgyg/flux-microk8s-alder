@@ -1,0 +1,13 @@
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/ssa: merge
+  name: raid1-hostpath
+provisioner: microk8s.io/hostpath
+reclaimPolicy: Delete
+parameters:
+  pvDir: /data/md0/
+volumeBindingMode: WaitForFirstConsumer
