@@ -7,7 +7,7 @@ metadata:
     kustomize.toolkit.fluxcd.io/ssa: merge
   name: raid1-hostpath
 provisioner: microk8s.io/hostpath
-allowVolumeExpansion: true
+allowVolumeExpansion: false
 reclaimPolicy: Delete
 parameters:
   pvDir: /data/md0/

@@ -8,6 +8,6 @@ metadata:
     storageclass.kubernetes.io/is-default-class: "true"
   name: microk8s-hostpath
 provisioner: microk8s.io/hostpath
-allowVolumeExpansion: true
+allowVolumeExpansion: false
 reclaimPolicy: Delete
 volumeBindingMode: WaitForFirstConsumer
