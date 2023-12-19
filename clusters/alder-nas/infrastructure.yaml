@@ -48,5 +48,5 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./infrastructure/configs
-  prune: false
+  prune: true
   wait: true
