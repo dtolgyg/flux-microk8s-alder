@@ -1,21 +1,21 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "onboarding": false,
+    "requireConfig": "optional",
+    "platform": "github",
+    "repositories": ["dtolgyg/flux-microk8s-alder"],
+    "prConcurrentLimit": 0,
+    "prHourlyLimit": 5,
+    "semanticCommits": "enabled",
+    "dependencyDashboard": true,
+    "dependencyDashboardTitle": "Renovate Dashboard",
+    "timezone": "Europe/Budapest",
     "extends": [
         "config:recommended",
-        ":dependencyDashboard",
-        ":semanticCommits",
-        ":timezone(Europe/Budapest)",
         "github>dtolgyg/flux-microk8s-alder//.github/renovate/labels.json5",
         "github>dtolgyg/flux-microk8s-alder//.github/renovate/semanticCommits.json5",
         "github>dtolgyg/flux-microk8s-alder//.github/renovate/allowedVersions.json5"
     ],
-    "onboarding": false,
-    "requireConfig": "optional",
-    "autodiscover": true,
-    "autodiscoverFilter": ["dtolgyg/flux-microk8s-alder"],
-    "dependencyDashboardTitle": "Renovate Dashboard",
-    "platform": "github",
-    "prHourlyLimit": 0,
     "flux": {
       "fileMatch": ["\\.yaml$"]
     }
