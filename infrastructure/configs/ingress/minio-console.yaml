@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: minio.goobyplz.duckdns.org
+    - host: minio.duckdns.org
       http:
         paths:
           - pathType: Prefix
