@@ -10,6 +10,7 @@
     ],
     "onboarding": false,
     "requireConfig": "optional",
+    "autodiscover": true,
     "dependencyDashboardTitle": "Renovate Dashboard",
     "platform": "github",
     "flux": {
