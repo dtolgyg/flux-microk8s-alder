@@ -11,6 +11,7 @@
     "onboarding": false,
     "requireConfig": "optional",
     "autodiscover": true,
+    "autodiscoverFilter": ["flux-microk8s-alder"],
     "dependencyDashboardTitle": "Renovate Dashboard",
     "platform": "github",
     "flux": {
