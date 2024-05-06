@@ -12,13 +12,6 @@
     "requireConfig": "optional",
     "dependencyDashboardTitle": "Renovate Dashboard",
     "flux": {
-      "fileMatch": [
-        "(^|/)clusters/.+\\.yaml(\\.j2)?$"
-      ]
-    },
-    "helm": {
-      "fileMatch": [
-        "(^|/)infrastructure/.+\\.yaml(\\.j2)?$"
-      ]
+      "fileMatch": ["\\.yaml$"]
     }
 }
