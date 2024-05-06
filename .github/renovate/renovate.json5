@@ -6,7 +6,8 @@
         ":semanticCommits",
         ":timezone(Europe/Budapest)",
         "github>dtolgyg/flux-microk8s-alder//.github/renovate/labels.json5",
-        "github>dtolgyg/flux-microk8s-alder//.github/renovate/semanticCommits.json5"
+        "github>dtolgyg/flux-microk8s-alder//.github/renovate/semanticCommits.json5",
+        "github>dtolgyg/flux-microk8s-alder//.github/renovate/allowedVersions.json5"
     ],
     "onboarding": false,
     "requireConfig": "optional",
@@ -14,6 +15,7 @@
     "autodiscoverFilter": ["dtolgyg/flux-microk8s-alder"],
     "dependencyDashboardTitle": "Renovate Dashboard",
     "platform": "github",
+    "prHourlyLimit": 0,
     "flux": {
       "fileMatch": ["\\.yaml$"]
     }

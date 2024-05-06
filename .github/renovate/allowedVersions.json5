@@ -2,11 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "addLabels": [
-        "renovate/helm"
-      ],
+      "allowedVersions": "<4.0.0",
       "matchDatasources": [
         "helm"
+      ],
+      "matchPackagePatterns": [
+        "ingress-nginx"
       ]
     }
   ]

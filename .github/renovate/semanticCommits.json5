@@ -3,25 +3,10 @@
     "packageRules": [
       {
         "matchDatasources": ["helm"],
-        "matchUpdateTypes": ["major"],
+        "matchUpdateTypes": ["major", "minor", "patch"],
         "semanticCommitType": "ci",
         "semanticCommitScope": "helm",
-        "commitMessageTopic": "dependency {{depName}}"
-      },
-      {
-        "matchDatasources": ["helm"],
-        "matchUpdateTypes": ["minor"],
-        "semanticCommitType": "ci",
-        "semanticCommitScope": "helm",
-        "commitMessageTopic": "dependency {{depName}}"
-      },
-  
-      {
-        "matchDatasources": ["helm"],
-        "matchUpdateTypes": ["patch"],
-        "semanticCommitType": "ci",
-        "semanticCommitScope": "helm",
-        "commitMessageTopic": "dependency {{depName}}"
+        "commitMessageTopic": "chart {{depName}}"
       }
     ]
-  }
+}
