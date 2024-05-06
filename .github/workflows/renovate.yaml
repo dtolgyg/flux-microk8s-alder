@@ -10,7 +10,7 @@ on:
     - cron: '0 3 * * 6'
 
 env:
-  LOG_LEVEL: "${{ inputs.logLevel || 'debug' }}"
+  LOG_LEVEL: "${{ inputs.logLevel || 'info' }}"
 
 jobs:
   renovate:
