@@ -1,8 +1,21 @@
 name: Renovate
 on:
   workflow_dispatch:
+    inputs:
+        logLevel:
+            description: Log Level
+            default: info
+            required: false
   schedule:
     - cron: '0/10 * * * *'
+
+env:
+  LOG_LEVEL: "${{ inputs.logLevel || 'debug' }}"
+  RENOVATE_AUTODISCOVER: true
+  RENOVATE_AUTODISCOVER_FILTER: "${{ github.repository }}"
+  RENOVATE_PLATFORM: github
+  RENOVATE_PLATFORM_COMMIT: true
+
 jobs:
   renovate:
     name: Renovate
