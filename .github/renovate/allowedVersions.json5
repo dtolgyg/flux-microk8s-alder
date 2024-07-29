@@ -8,7 +8,7 @@
     },
     {
       "matchDatasources": ["github-releases"],
-      "matchPackagePatterns": ["fluxcd/flux2",],
+      "matchPackagePatterns": ["fluxcd/flux2"],
       "allowedVersions": "<=2.2.1"
     }
   ]
