@@ -7,10 +7,9 @@
       "allowedVersions": "<=4.10.0"
     },
     {
-      "matchManagers": ["flux"],
-      "matchDatasources": ["git-refs", "git-tags", "github-releases", "github-runners", "github-tags", "helm", "docker"],
-      "matchPackageNames": ["clusters/alder-nas/flux-system/gotk-components.yaml"],
-      "allowedVersions": "<=2.2.2"
+      "matchDatasources": ["github-releases"],
+      "matchPackagePatterns": ["fluxcd/flux2",],
+      "allowedVersions": "<=2.2.1"
     }
   ]
 }
